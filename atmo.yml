@@ -1,0 +1,11 @@
+---
+- name: Update repository Centos
+  hosts: myhost
+  become: true
+
+  task:
+    - name: upgrade all packages
+      yum:
+        name: '*'
+        state: latest
+    

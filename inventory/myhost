@@ -1,0 +1,8 @@
+[all:vars]
+
+[myhost]
+labatmo1
+
+[allhost]
+labatmo3
+labatmo1

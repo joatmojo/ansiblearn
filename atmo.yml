@@ -9,18 +9,18 @@
       https_proxy: "{{ https_proxy }}"
 
   tasks:
-    - name: install mysql server
+    - name: install mariadb server
       yum:
-        name: mysql-server
+        name: mariadb
         state: latest
       environment: "{{ proxy_env }}" 
     
     - name: enable service mysql
       service:
-        name: mysqld.service
+        name: mysql.service
         enabled: yes
 
     - name: starts service mysql
       service:
-        name: mysqld.service
+        name: mysql.service
         state: started

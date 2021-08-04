@@ -15,3 +15,12 @@
         state: latest
       environment: "{{ proxy_env }}" 
     
+    - name: enable service mysql
+      service:
+        name: mysqld.service
+        enabled: yes
+
+    - name: starts service mysql
+      service:
+        name: mysqld.service
+        state: started

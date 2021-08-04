@@ -17,10 +17,10 @@
     
     - name: enable service mysql
       service:
-        name: mysql.service
+        name: mysql
         enabled: yes
 
     - name: starts service mysql
       service:
-        name: mysql.service
+        name: mysql
         state: started

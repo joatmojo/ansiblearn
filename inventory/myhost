@@ -1,4 +1,6 @@
 [all:vars]
+http_proxy=http://192.168.131.254:3128
+https_proxy=http://192.168.131.254:3128
 
 [myhost]
 labatmo1

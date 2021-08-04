@@ -13,4 +13,11 @@
       yum:
         name: '*'
         state: latest
+      environment: "{{ proxy_env }}"
+
+    - name: install mysql server
+      yum:
+        name: mysql-server
+        state: latest
+      environment: "{{ proxy_env }}" 
     
